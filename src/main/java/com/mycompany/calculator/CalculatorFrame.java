@@ -5,7 +5,6 @@
 package com.mycompany.calculator;
 
 import java.awt.event.KeyEvent;
-import javax.swing.ImageIcon;
 
 /**
  *
