@@ -16,7 +16,6 @@ public class CalculatorFrame extends javax.swing.JFrame {
     private double secondNum;
     private double result;
     private String operation;
-    private Object math;
     
     /**
      * Creates new form CalculatorFrame
