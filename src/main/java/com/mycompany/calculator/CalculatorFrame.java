@@ -584,89 +584,104 @@ public class CalculatorFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.setResizable(false);
         this.setSize(295, 760);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
         this.setResizable(false);
         this.setSize(295, 475);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_formWindowActivated
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
         this.setResizable(false);
         this.setSize(295, 475);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
         // TODO add your handling code here:
         this.setResizable(false);
         this.setSize(295, 760);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jMenu1ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton7.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton8.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton9.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton4.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton5.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton6.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton1.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton2.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton3.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton0ActionPerformed
         // TODO add your handling code here:
         String inputNum = jTextDisplay.getText() + jButton0.getText();
         jTextDisplay.setText(inputNum);
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButton0ActionPerformed
 
     private void jButtonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonClearActionPerformed
         // TODO add your handling code here:
         jTextDisplay.setText("");
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonClearActionPerformed
 
     private void jButtonBackspaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBackspaceActionPerformed
@@ -678,6 +693,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
             backspace = stringBuilder.toString();
             jTextDisplay.setText(backspace);
         }
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonBackspaceActionPerformed
 
     private void jButtonPointActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPointActionPerformed
@@ -685,6 +701,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         if (!jTextDisplay.getText().contains(".")) {
             jTextDisplay.setText(jTextDisplay.getText() + jButtonPoint.getText());
         }
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonPointActionPerformed
 
     private void jButtonPlusMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPlusMinusActionPerformed
@@ -692,6 +709,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double opposite = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         opposite = opposite * (-1);
         jTextDisplay.setText(String.valueOf(opposite));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonPlusMinusActionPerformed
 
     private void jButtonSqrtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSqrtActionPerformed
@@ -699,6 +717,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double sqrt = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         sqrt = Math.sqrt(sqrt);
         jTextDisplay.setText(String.valueOf(sqrt));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonSqrtActionPerformed
 
     private void jButtonLnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLnActionPerformed
@@ -706,6 +725,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double log = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         log = Math.log(log);
         jTextDisplay.setText(String.valueOf(log));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonLnActionPerformed
 
     private void jButtonSinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSinActionPerformed
@@ -713,6 +733,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double sin = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         sin = Math.log(sin);
         jTextDisplay.setText(String.valueOf(sin));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonSinActionPerformed
 
     private void jButtonSinhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSinhActionPerformed
@@ -720,6 +741,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double sinh = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         sinh = Math.sinh(sinh);
         jTextDisplay.setText(String.valueOf(sinh));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonSinhActionPerformed
 
     private void jButtonCoshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCoshActionPerformed
@@ -727,6 +749,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double cosh = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         cosh = Math.cosh(cosh);
         jTextDisplay.setText(String.valueOf(cosh));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonCoshActionPerformed
 
     private void jButtonCosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCosActionPerformed
@@ -734,6 +757,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double cos = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         cos = Math.log(cos);
         jTextDisplay.setText(String.valueOf(cos));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonCosActionPerformed
 
     private void jButtonTanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTanActionPerformed
@@ -741,6 +765,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double tan = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         tan = Math.tan(tan);
         jTextDisplay.setText(String.valueOf(tan));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonTanActionPerformed
 
     private void jButtonTanhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTanhActionPerformed
@@ -748,12 +773,14 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double tanh = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         tanh = Math.log(tanh);
         jTextDisplay.setText(String.valueOf(tanh));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonTanhActionPerformed
 
     private void jButtonPiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPiActionPerformed
         // TODO add your handling code here:
         double pi = Math.PI;
         jTextDisplay.setText(String.valueOf(pi));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonPiActionPerformed
 
     private void jButtonPowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPowerActionPerformed
@@ -761,6 +788,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         firstNum = Double.parseDouble(jTextDisplay.getText());
         jTextDisplay.setText(null);
         operation = "^";
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonPowerActionPerformed
 
     private void jButtonSquareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSquareActionPerformed
@@ -768,6 +796,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double pow = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         pow = pow * pow;
         jTextDisplay.setText(String.valueOf(pow));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonSquareActionPerformed
 
     private void jButtonCubeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCubeActionPerformed
@@ -775,18 +804,21 @@ public class CalculatorFrame extends javax.swing.JFrame {
         double pow = Double.parseDouble(String.valueOf(jTextDisplay.getText()));
         pow = pow * pow * pow;
         jTextDisplay.setText(String.valueOf(pow));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonCubeActionPerformed
 
     private void jButtonBinaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBinaryActionPerformed
         // TODO add your handling code here:
         int bin = Integer.parseInt(jTextDisplay.getText());
         jTextDisplay.setText(Integer.toString(bin, 2));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonBinaryActionPerformed
 
     private void jButtonHexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonHexadecimalActionPerformed
         // TODO add your handling code here:
         int hex = Integer.parseInt(jTextDisplay.getText());
         jTextDisplay.setText(Integer.toString(hex, 16));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonHexadecimalActionPerformed
 
     private void jTextDisplayKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextDisplayKeyTyped
@@ -796,6 +828,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
             getToolkit().beep();
             evt.consume();
         }
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jTextDisplayKeyTyped
 
     private void jButtonEqualsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEqualsActionPerformed
@@ -827,6 +860,7 @@ public class CalculatorFrame extends javax.swing.JFrame {
             answer = String.format("%.2f", result);
             jTextDisplay.setText(answer);
         }
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonEqualsActionPerformed
 
     private void jButtonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPlusActionPerformed
@@ -861,12 +895,14 @@ public class CalculatorFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         int oct = Integer.parseInt(jTextDisplay.getText());
         jTextDisplay.setText(Integer.toString(oct, 8));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonOctalActionPerformed
 
     private void jButtonEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEActionPerformed
         // TODO add your handling code here:
         double e = Math.E;
         jTextDisplay.setText(String.valueOf(e));
+        jTextDisplay.setCaretPosition(0);
     }//GEN-LAST:event_jButtonEActionPerformed
 
     private void jButtonModActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonModActionPerformed
